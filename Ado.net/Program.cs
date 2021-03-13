@@ -15,13 +15,16 @@ namespace FirstTask
             {
                 Triangle triangle1 = TriangleFactory.CreateTriangle("input1.txt");
                 Console.WriteLine(triangle1);
-            } catch(ArgumentException e)
+            } 
+            catch(ArgumentException e)
             {
                 Console.WriteLine(e.Message);
-            } catch(IOException e)
+            } 
+            catch(IOException e)
             {
                 Console.WriteLine(e.Message);
-            } catch (FormatException e)
+            } 
+            catch (FormatException e)
             {
                 Console.WriteLine(e.Message);
             }

@@ -13,7 +13,6 @@ namespace FirstTask
 
         public Triangle(Point pointOne, Point pointTwo, Point pointThree)
         {
-            Validate(pointOne, pointTwo, pointThree);
             this.pointOne = pointOne;
             this.pointTwo = pointTwo;
             this.pointThree = pointThree;
@@ -27,7 +26,6 @@ namespace FirstTask
             {
                 throw new ArgumentException("you must need 3 points");
             }
-            Validate(points[0], points[1], points[2]);
             pointOne = points[0];
             pointTwo = points[1];
             pointThree = points[2];
@@ -37,14 +35,6 @@ namespace FirstTask
 
         public double Square { get => square; }
         public double Perimeter { get => perimeter; }
-
-        public static void Validate(Point pointOne, Point pointTwo, Point pointThree)
-        {
-            if(Point.IsOnOneLine(pointOne, pointTwo, pointThree))
-            {
-                throw new ArgumentException("Points should not lie on one straight line");
-            }
-        }
 
         public override bool Equals(object obj)
         {
