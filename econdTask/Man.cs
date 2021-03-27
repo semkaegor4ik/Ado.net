@@ -8,10 +8,10 @@ namespace SecondTask
 {
     public class Man
     {
-        private readonly string name;
-        private int age;
-        private int weight;
-        private int height;
+        protected readonly string name;
+        protected int age;
+        protected int weight;
+        protected int height;
 
         public Man(string name, int age, int weight, int height)
         {
